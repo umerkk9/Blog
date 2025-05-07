@@ -1,0 +1,111 @@
+/* Base Styles */
+body {
+  background: #f3f4f6; /* light gray-blue */
+  color: #1f2937; /* dark gray */
+  margin-top: 5rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111827; /* darker heading */
+}
+
+/* Navbar */
+.bg-steel {
+  background-color: #2563eb; /* bright indigo blue */
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #e0e7ff;
+  transition: color 0.3s ease;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Content Card */
+.content-section {
+  background: #ffffff;
+  padding: 20px 25px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Article Styles */
+.article-title {
+  color: #1e40af; /* blue-800 */
+  font-weight: 500;
+}
+
+a.article-title:hover {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+  border-radius: 8px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.article-metadata a:hover {
+  color: #374151;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  fill: #2563eb;
+}
+
+/* Account Profile Styles */
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  border: 3px solid #3b82f6;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Custom Buttons */
+.custom-btn {
+  background-color: #10b981;
+  color: #ffffff;
+  border: none;
+}
+
+.custom-btn:hover {
+  background-color: #059669;
+}

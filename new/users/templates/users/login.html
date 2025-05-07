@@ -1,0 +1,24 @@
+{% extends "blog/base.html" %}
+
+{% block abs %}
+<div class="d-flex justify-content-center align-items-center vh-100 bg-light">
+  <div class="card shadow-lg p-4 bg-white rounded-4" style="width: 100%; max-width: 450px;">
+    <div class="card-body">
+      <h3 class="card-title text-center mb-4 text-primary fw-semibold">Log in</h3>
+      <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="d-grid mt-3">
+          <button type="submit" class="btn btn-success btn-lg">Sign IN</button>
+        </div>
+      </form>
+      <div class="border-top pt-3 text-center mt-4">
+        <small class="text-muted">
+          Need an account?
+          <a href="{% url 'register'%}" class="text-decoration-none text-primary fw-semibold">Sign Up</a>
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock abs %}

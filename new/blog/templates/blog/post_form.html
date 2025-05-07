@@ -1,0 +1,18 @@
+{% extends "blog/base.html" %}
+
+{% block abs %}
+<div class="d-flex justify-content-center align-items-center vh-100 bg-light">
+  <div class="card shadow-lg p-4 bg-white rounded-4" style="width: 100%; max-width: 450px;">
+    <div class="card-body">
+      <h3 class="card-title text-center mb-4 text-primary fw-semibold">Blog Post</h3>
+      <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="d-grid mt-3">
+          <button type="submit" class="btn btn-success btn-lg">Post</button>
+        </div>
+      </form>
+     </div>
+  </div>
+</div>
+{% endblock abs %}
